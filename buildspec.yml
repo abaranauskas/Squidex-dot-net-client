@@ -11,5 +11,5 @@ phases:
 artifacts:
   files:
     - Sample.Blog/build_output/**/*
-    # - scripts/**/*
-    # - appspec.yml
+    - scripts/**/*
+    - appspec.yml
