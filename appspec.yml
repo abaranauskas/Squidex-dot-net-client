@@ -21,7 +21,7 @@ hooks:
       timeout: 500
       runas: root
 
-    - location: scripts/install_https
+    - location: scripts/install_httpd
       timeout: 300
       runas: root
 
