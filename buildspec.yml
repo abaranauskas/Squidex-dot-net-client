@@ -1,0 +1,15 @@
+﻿version: 0.2
+phases:
+  pre_build:
+    commands:
+      - echo Restore started on `date`
+      - dotnet restore Sample.Blog/Sample.Blog.csproj
+  build:
+    commands:
+      - echo Build started on `date`
+      - dotnet publish -c release -o ./build_output Sample.Blog/Sample.Blog.csproj
+artifacts:
+  files:
+    - Sample.Blog/build_output/**/*
+    - scripts/**/*
+    - appspec.yml
